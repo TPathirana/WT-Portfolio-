@@ -74,6 +74,9 @@ nav ul li ::after{
     top: 0;
     left: 5;
   }
+  .with-blue-border {
+    border: 2px solid blue; /* You can adjust the width and color as needed */
+}
 
 #sidemenu {
     background-color:transparent; /* Grey background color */
