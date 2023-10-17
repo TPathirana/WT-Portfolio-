@@ -28,8 +28,9 @@
             </nav>
             <div class="header-text">
                 <h1>Welcome !</h1>
-                <h1>I'm <span>Tirani Pathirana</span> </h1>
-                <p>UI/UX Designer</p><br><br>
+                <h1>I'm <span>Tirani Pathirana</span> </h1><br>
+                <p>An Undergraduate</p> 
+                <p>UI/UX Designer</p><br>
             </div>
 
             <img src="images/Back2.jpg" class="mypic" alt="mypic">
@@ -59,36 +60,38 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> <b><i>About Me</i></b></h1><br><br>
-                    <p>Hey, I’m Tirani, a creative and versatile graphic designer with a keen eye for detail. 
+                    <p>Hey, I’m Tirani, an undergraduate student, a creative and versatile graphic designer with a keen eye for detail. 
                        I specialize in creating visually stunning designs that convey a brand’s message and captivate its audience.
                        I’m well-versed in a variety of design software and techniques, and I’m always looking for new ways to enhance my skills.
                        When I’m not designing, I enjoy reading, cooking, and spending time with my pets.</p>
 
                        <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>    <!-----categories 3 -->
-                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-
+                        <a href="#skills" class="tab-links active-link">Skills</a>
+                        <a href="#experience" class="tab-links">Experiences</a>
+                        <a href="#education" class="tab-links">Education</a>
                     </div>
                     
-                    <div class="tab-contents active-tab" id="skills">
+                    <div id="skills" style="display: block;">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web App Development</li>   
-                           
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    
+                    <div id="experience" style="display: none;">
                         <ul>
                             <li><span>2020 - current</span><br>UI/UX Design Training  </li>
                             <li><span>2017-2020</span><br>Freelancer</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    
+                    <div id="education" style="display: none;">
                         <ul>
                             <li><span>2022- Current</span><br>University Education</li>
                             <li><span>2012-2020</span><br>Secondary School Education</li> 
                             <li><span>2007-2011</span><br>Primary School Education</li>
+                        </ul>
+                    </div>
 
                         <br>
                         <br>
@@ -240,6 +243,19 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
+<script>
+    function opentab(tabName) {
+        // Hide all content sections
+        document.getElementById("skills").style.display = "none";
+        document.getElementById("experience").style.display = "none";
+        document.getElementById("education").style.display = "none";
+
+        // Show the selected content section
+        document.getElementById(tabName).style.display = "block";
+    }
+</script>
 
 </body>
 </html>
