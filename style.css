@@ -96,7 +96,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
 }
 
@@ -159,47 +159,40 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
-
-.tab-links{
+.tab-links{                        
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
-    position: relative;
+    cursor:pointer;
+    position:relative ;
 }
-
 .tab-links::after{
-    content:'';
-    width:0;
+    content: '';
+    width: 0;    /* 0 denne hidden krnna */
     height: 3px;
-    background: #1a1dc4;
-    position: absolute;
-    left: 0;
+    background: #25268b;
+    position: absolute;                     
+    left:0;
     bottom: -8px;
     transition: 0.5s;
 }
-
 .tab-links.active-link::after{
     width: 50%;
 }
-
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0 ;
+    margin: 10px 0;
 }
-
-.tab-contents ul li span{
-    color: #25268b;
+.tab-contents ul li span{     
+    color: #4b9c90;
     font-size: 14px;
 }
-
-.tab-contents{
+.tab-contents{      
     display: none;
 }
-
 .tab-contents.active-tab{
     display: block;
-} 
+}
 
 /*----------------------services---------------*/
 
