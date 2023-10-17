@@ -36,6 +36,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: transparent;
     }
 
 .logo{
@@ -75,7 +76,7 @@ nav ul li ::after{
   }
 
 #sidemenu {
-    background-color: #999; /* Grey background color */
+    background-color:transparent; /* Grey background color */
     padding: 8px 450px; /* Add padding to the top and bottom and make it longer from left to right */
     list-style: none; /* Remove the default list-style */
     display: flex; /* Use flexbox to arrange the items horizontally */
@@ -403,16 +404,16 @@ p i.fa-solid,
 
 /*-----------------css for small screen-----------*/
 nav .fas {
-    display:none;
+    display: none;
 }
 
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 100%;
         font-size: 16px;
     }
     .header-text h1{
