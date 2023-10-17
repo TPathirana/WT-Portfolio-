@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compathible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89f0415134.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+            <img src="images/Tirani Logo.jpg" class="pic" alt="pic">    
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Welcome !</h1>
+                <h1>I'm <span>Tirani Pathirana</span> <br> From Sri Lanka</h1>
+                <p>UI/UX Designer</p><br>
+            </div>
+
+            <img src="images/Back2.jpg" class="mypic" alt="mypic">
+            
+            <p><i class="fa-solid fa-paper-plane"></i>tiranilevvandhie001@gmail.com</p><br>
+                    <p><i class="fa-solid fa-phone"></i>0705929265</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100086101995608&mibextid=9R9pXO"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/TPathirana"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/tirani.iiiii?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tirani-levvandhie-773941286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+        </div>
+
+    </div>
+    
+    
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutCur.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>Hey, I’m Tirani, a creative and versatile graphic designer with a keen eye for detail. 
+                       I specialize in creating visually stunning designs that convey a brand’s message and captivate its audience.
+                       I’m well-versed in a variety of design software and techniques, and I’m always looking for new ways to enhance my skills.
+                       When I’m not designing, I enjoy reading, cooking, and spending time with my pets.</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>    <!-----categories 3 -->
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>   
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - current</span><br>UI/UX Design Training  </li>
+                            <li><span>2017-2020</span><br>Freelancer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022- Current</span><br>University Education</li>
+                            <li><span>2012-2020</span><br>Secondary School Education</li> 
+                            <li><span>2007-2011</span><br>Primary School Education</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Hello!! You can find my Web Designs from here !!!</p>
+                    <a href="index.html">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>  Hello!! You can find my UI/UX Designs from here !!!</p>
+                    <a href="images/Copy Interface.png">Learn more</a>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-------------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    
+                   
+                    <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright  Tirani. Made with <i class="fa-solid fa-heart"></i>Taczone</p>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    <script>
+        
+        var tablinks=document.getElementsByClassName("tab-Inks");
+        var tablecontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classLink.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzm5y2p-_jLjIKiAid1I38keKYCl3A27JS3RHE-Y1lfjyQfzXeFVbjyaQdnljSAL20/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
